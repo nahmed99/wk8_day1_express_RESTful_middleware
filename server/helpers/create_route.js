@@ -17,7 +17,7 @@ const createRouter = (data) => {
     });
 
 
-    // CREATE - create a new tea. You need middleware to handle the body of a POST.
+    // CREATE - create a new tea. You need middleware to handle the body of a POST. The request could contain a body of data.
     router.post('/', (req, res) => {
         data.push(req.body);
         res.json(data);
